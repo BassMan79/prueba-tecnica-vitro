@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.722">
+    <testcase classname="Manual results input module scenarios" name="Search and validate data found in raw data" time="28.531">
+        <system-out><![CDATA[Given I log in with 3994 identifier test username and interqc password......passed
+And I check login is correct................................................passed
+When I go to raw data page..................................................passed
+And I enter search criteria.................................................passed
+Then I check that two rows appear...........................................passed
+When I go to home page......................................................passed
+And I open a results widget.................................................passed
+And I check that result widget appear.......................................passed
+Then I logout...............................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
