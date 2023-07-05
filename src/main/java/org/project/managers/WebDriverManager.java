@@ -21,8 +21,6 @@ public class WebDriverManager {
 
     private WebDriver createDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
         HashMap<String, Object> chromePref = new HashMap<>();
         chromePref.put("download.default_directory", Paths.get("target/download").toAbsolutePath().toString());
         chromePref.put("profile.content_settings.exceptions.automatic_downloads.*.setting", 1);
