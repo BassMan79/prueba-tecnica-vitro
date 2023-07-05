@@ -13,5 +13,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Data test in Vitro
+      - name: Instalar dependencias
+        run: mvn clean install
+      - name: Ejecutrar test
         run: mvn clean test

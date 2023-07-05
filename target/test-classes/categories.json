@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Time out - Element expected not visible",
+    "traceRegex": ".*waiting for visibility.*",
+    "matchedStatuses": [ "broken", "failed" ]
+  },
+  {
+    "name": "Unexpected error",
+    "messageRegex": ".*ProjectException.*",
+    "matchedStatuses": [ "broken", "failed" ]
+  },
+  {
+    "name": "Assertion error",
+    "traceRegex": ".*AssertionError.*",
+    "matchedStatuses": [ "broken", "failed" ]
+  }
+]

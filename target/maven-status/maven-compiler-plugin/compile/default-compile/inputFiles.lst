@@ -1,0 +1,16 @@
+E:\prueba-tecnica-vitro\src\main\java\org\project\pageobject\MenuPage.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\pageobject\helpers\Clickable.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\pageobject\helpers\Findable.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\managers\WebDriverManager.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\pageobject\HomePage.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\cucumber\TestContext.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\pageobject\DataInsertPage.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\pageobject\PageBase.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\pageobject\LoginPage.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\pageobject\helpers\Waitable.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\exception\ProjectException.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\pageobject\helpers\WebDriverContainer.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\pageobject\helpers\Conditionable.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\dataproviders\AllureEnvironmentWriter.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\managers\PageObjectManager.java
+E:\prueba-tecnica-vitro\src\main\java\org\project\pageobject\helpers\Fillable.java
