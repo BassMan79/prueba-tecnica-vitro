@@ -1,5 +1,0 @@
-org\project\runner\RunMainTest.class
-org\project\stepdefinition\LoginStep.class
-org\project\stepdefinition\ManualResultsStep.class
-org\project\stepdefinition\HomeStep.class
-org\project\stepdefinition\Hooks.class
