@@ -1,4 +1,4 @@
-@Regression
+@High
 Feature: Manual results input module scenarios
 
   Scenario Outline: Search and validate data found in raw data

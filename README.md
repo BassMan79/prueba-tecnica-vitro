@@ -1,15 +1,14 @@
-# Proyecto de Prueba con Selenium, Java y Maven.
+# Vitro Prueba Tecnica 
 ### Proyecto de pruebas automatizadas utilizando Selenium WebDriver con Java y gestionado con Maven. 
 <sub> Puede servir como base para iniciar un framework de automatización de pruebas.</sub>
 
 **Tecnologias utilizadas:**
-* Java Development Kit (JDK) v17.0.7
-* Selenium WebDriver v3.141.59
+* JDK 17
+* Selenium WebDriver v4.9.0
 * Cucumber v7.9.0
-* Reportes: Allure v2.20.0
-* Maven
+* Reports: Allure v2.20.0
+* Building Tool: Maven
 * IDE: IntelliJ
-* SO: Windows 10
 
 **Estructura del Proyecto:**
 El proyecto sigue la estructura POM estándar de un proyecto Maven
@@ -24,4 +23,7 @@ El proyecto sigue la estructura POM estándar de un proyecto Maven
 
 **Ejecutar test:**
 ``mvn test``
+
+**Generar reporte:**
+``mvn allure:serve``
 
