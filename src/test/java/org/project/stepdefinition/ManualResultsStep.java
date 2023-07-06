@@ -17,17 +17,17 @@ public class ManualResultsStep {
     }
 
     @When("I go to raw data page")
-    public void iGoToRawDataPage(){
+    public void iGoToRawDataPage() throws Exception {
         menuPage.goToRawDataPage();
     }
 
     @And("I enter search criteria")
-    public void iEnterSearchCriteria() {
+    public void iEnterSearchCriteria() throws Exception {
         dataInsertPage.enterSearchCriteria();
     }
 
     @Then("I check that two rows appear")
-    public void iCheckTwoRowsAppear() {
+    public void iCheckTwoRowsAppear() throws Exception {
         Assertions.assertTrue(dataInsertPage.checkTwoRowsAppear());
     }
 }

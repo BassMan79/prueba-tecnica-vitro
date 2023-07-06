@@ -19,7 +19,7 @@ public class LoginStep {
     }
 
     @And("I check login is correct")
-    public void iCheckLoginIsCorrect() {
+    public void iCheckLoginIsCorrect() throws Exception {
         Assertions.assertTrue(loginPage.checkUserIsLoged());
     }
 }

@@ -24,7 +24,7 @@ public class HomeStep {
     }
 
     @And("I open a results widget")
-    public void iOpenResultsWidget(){
+    public void iOpenResultsWidget() throws Exception {
         homePage.clickOnLastRejectWidget();
     }
 
