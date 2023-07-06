@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableMap;
 import io.cucumber.java.After;
 import io.cucumber.java.BeforeAll;
 import org.project.cucumber.TestContext;
+import org.project.dataproviders.ConfigFileReader;
 
 import java.util.logging.Logger;
 
@@ -20,9 +21,11 @@ public class Hooks {
     }
 
     @BeforeAll
-    public static void beforeAll() {
+    public static void beforeAll() throws Exception {
         allureEnvironmentWriter(
                 ImmutableMap.<String, String>builder()
+                        .put("URL", ConfigFileReader.getUrlApplication())
+                        .put("Browser", ConfigFileReader.getBrowser())
                         .put("Browser", "Chrome")
                         .build());
     }
