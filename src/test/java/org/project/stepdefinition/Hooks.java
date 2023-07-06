@@ -24,9 +24,8 @@ public class Hooks {
     public static void beforeAll() throws Exception {
         allureEnvironmentWriter(
                 ImmutableMap.<String, String>builder()
+                        .put("Browser", ConfigFileReader.getBrowser().name())
                         .put("URL", ConfigFileReader.getUrlApplication())
-                        .put("Browser", ConfigFileReader.getBrowser())
-                        .put("Browser", "Chrome")
                         .build());
     }
 
