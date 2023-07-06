@@ -5,8 +5,8 @@
 **Tecnologias utilizadas:**
 * JDK 17
 * Selenium WebDriver v4.9.0
-* Cucumber v7.9.0
-* Reports: Allure v2.20.0
+* Cucumber v7.12.0
+* Reports: Allure v2.22.0
 * Building Tool: Maven
 * IDE: IntelliJ
 

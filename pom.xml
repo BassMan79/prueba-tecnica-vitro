@@ -14,11 +14,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit-jupiter.version>5.9.1</junit-jupiter.version>
         <junit-platform.version>1.9.1</junit-platform.version>
-        <cucumber.version>7.9.0</cucumber.version>
+        <cucumber.version>7.12.0</cucumber.version>
         <selenium.version>4.9.0</selenium.version>
-        <bonigarcia.version>5.1.0</bonigarcia.version>
+        <bonigarcia.version>5.3.2</bonigarcia.version>
         <common-lang.version>3.12.0</common-lang.version>
-        <allure.version>2.20.0</allure.version>
+        <allure.version>2.22.0</allure.version>
     </properties>
 
     <dependencyManagement>
@@ -138,7 +138,7 @@
                         <configuration>
                             <tasks>
                                 <copy todir="${project.build.directory}/classes" overwrite="true" failonerror="false">
-                                    <fileset dir="${basedir}/profiles/env/web"/>
+                                    <fileset dir="${basedir}/profiles/env/${env}"/>
                                 </copy>
                             </tasks>
                         </configuration>

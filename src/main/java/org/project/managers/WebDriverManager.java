@@ -14,7 +14,7 @@ public class WebDriverManager {
 
     private WebDriver driver;
     private final DriverType driverType;
-    private final Dimension windowSize = new Dimension(1920, 1080);
+    private Dimension windowSize = new Dimension(1920, 1080);
 
     public WebDriverManager() throws Exception {
         driverType = ConfigFileReader.getBrowser();
@@ -47,6 +47,7 @@ public class WebDriverManager {
             driver = new ChromeDriver(optionsGithub);
         }
         driver.get(ConfigFileReader.getApplicationUrl());
+        driver.switchTo().alert().accept();
         if (ConfigFileReader.getBrowserWindowSize()) {
             driver.manage().window().maximize();
         } else {
