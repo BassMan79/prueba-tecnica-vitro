@@ -20,7 +20,7 @@ public class MenuPage extends PageBase{
         super(driver);
     }
 
-    public void goToRawDataPage(){
+    public void goToRawDataPage() throws Exception {
         waitUntilElementIsVisible(resultsAndLotMenuId);
         clickOnClickableElement(resultsAndLotMenuId);
         clickOnClickableElement(manualResultsMenuXpath);

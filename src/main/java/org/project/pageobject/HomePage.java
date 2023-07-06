@@ -9,7 +9,7 @@ public class HomePage extends PageBase {
 
     public HomePage(WebDriver driver) { super(driver); }
 
-    public void clickOnLastRejectWidget() {
+    public void clickOnLastRejectWidget() throws Exception {
         waitUntilElementIsVisible(lastRejectedWidgetBtnId);
         clickOnClickableElement(lastRejectedWidgetBtnId);
     }

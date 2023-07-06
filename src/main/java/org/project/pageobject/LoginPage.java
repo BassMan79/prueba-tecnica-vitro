@@ -21,7 +21,7 @@ public class LoginPage extends PageBase{
         clickOnClickableElement(loginBtnXpath);
     }
 
-    public boolean checkUserIsLoged(){
+    public boolean checkUserIsLoged() throws Exception {
         waitUntilElementIsVisible(headerMenuId);
         return elementIsVisible(headerMenuId);
     }

@@ -34,7 +34,7 @@ public class DataInsertPage extends PageBase {
         super(driver);
     }
 
-    public void enterLabCriteria() {
+    public void enterLabCriteria() throws Exception {
         waitUntilElementIsClicked(labDropDownId);
         clickOnClickableElement(firstLabExpandBtnXpath);
         waitUntilElementIsVisible(secondLabExpandBtnXpath);
@@ -43,7 +43,7 @@ public class DataInsertPage extends PageBase {
         waitSeconds(2);
     }
 
-    public void enterControlCriteria() {
+    public void enterControlCriteria() throws Exception {
         waitUntilElementIsClicked(controlDropDownId);
         clickOnClickableElement(firstControlExpandBtnXpath);
         waitUntilElementIsVisible(secondControlExpandBtnXpath);
@@ -52,13 +52,13 @@ public class DataInsertPage extends PageBase {
         waitSeconds(2);
     }
 
-    public void enterAnalyteCriteria() {
+    public void enterAnalyteCriteria() throws Exception {
         waitUntilElementIsClicked(analyteDropDownId);
         waitUntilElementIsVisible(analyteDataToSelectId);
         clickOnClickableElement(analyteDataToSelectId);
     }
 
-    public void enterSearchCriteria() {
+    public void enterSearchCriteria() throws Exception {
         enterLabCriteria();
         enterControlCriteria();
         enterAnalyteCriteria();
@@ -66,7 +66,7 @@ public class DataInsertPage extends PageBase {
         clickOnClickableElement(applyBtnId);
     }
 
-    public boolean checkTwoRowsAppear(){
+    public boolean checkTwoRowsAppear() throws Exception {
         waitUntilElementIsVisible(rowsResultsXpath);
         List<WebElement> rows = findElements(rowsResultsXpath);
         return rows.size() == 2;
